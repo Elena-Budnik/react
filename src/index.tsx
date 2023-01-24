@@ -7,7 +7,7 @@ const Title = () => {
 
 const Content = () => {
     return (
-        <div>
+        <>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Consequuntur ex officia et, repellat exercitationem earum eos
@@ -20,7 +20,7 @@ const Content = () => {
                 natus neque commodi consequatur vero qui delectus sed, ipsam
                 nobis, eveniet pariatur eaque.
             </p>
-        </div>
+        </>
     )
 }
 function App() {
