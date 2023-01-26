@@ -1,3 +1,4 @@
+import './Content.css'
 type Props = {
     text1: string
     text2: string
