@@ -8,13 +8,7 @@ export const Content = (props: Props) => {
     let data = false
     return (
         <>
-            <p
-                style={{
-                    color: data ? 'yellow' : 'white',
-                    backgroundColor: 'green',
-                    padding: '15px',
-                }}
-            >
+            <p className='Content'>
                 {props.text1}
             </p>
             <p>{props.text2}</p>
