@@ -1,26 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {Content} from './Content'
-
-interface ITitleProps {
-    text: string
-}
+import {Title} from './Title'
 
 
-const Title = (props: ITitleProps) => {
-    console.log(props)
-    return <h1>Hello {props.text}</h1>
-}
 
-
+// Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt totam id molestias eaque numquam alias, fugit, voluptatem cupiditate amet aperiam veniam tenetur commodi placeat maiores, vero possimus? Unde, itaque deleniti.
 function App() {
     return (
         <React.Fragment>
             <Title text="React" />
             <Title text="TS" />
             <Content
-                text1={'Hello World 1'}
-                text2={'Hello World 2'}
+                text1={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt totam id molestias eaque numquam alias, fugit, voluptatem cupiditate amet aperiam veniam tenetur commodi placeat maiores, vero possimus? Unde, itaque deleniti.'}
+                text2={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt totam id molestias eaque numquam alias, fugit, voluptatem cupiditate amet aperiam veniam tenetur commodi placeat maiores, vero possimus? Unde, itaque deleniti.'}
                 year={2023}
             />
         </React.Fragment>
