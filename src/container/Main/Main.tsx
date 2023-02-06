@@ -1,6 +1,6 @@
 
 type Props = {}
-const Footer = (props: Props) => {
-    return <div>Footer</div>
+const Main = (props: Props) => {
+    return <div>Main</div>
 }
-export default Footer
+export default Main
