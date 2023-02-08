@@ -3,7 +3,7 @@ import './ProductsListItem.scss'
 type Props = {}
 const ProductsListItem = (props: Props) => {
     return (
-        <Card variant="outlined">
+        <Card variant="outlined" className='product'>
             <CardContent>
                 <div className="product-title">iPhone 14 pro</div>
                 <div className="product-desc">This iPhone 14 pro</div>
