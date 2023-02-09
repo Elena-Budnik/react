@@ -31,7 +31,7 @@ const ProductsListItem = ({
         setCount(count + 1)
     }
     const onDecrement = () => {
-        setCount(count - 1)
+        count>0 ? setCount(count - 1) : setCount(0)
     }
 
     return (
