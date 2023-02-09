@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardContent } from '@mui/material'
+import { Button, Card, CardActions, CardContent, TextField } from '@mui/material'
 import './ProductsListItem.scss'
 
 type Props = {
@@ -7,6 +7,7 @@ type Props = {
     type: string
     capacity: string
     price: number
+    image: string
 }
 
 const ProductsListItem = ({
@@ -15,15 +16,29 @@ const ProductsListItem = ({
     type,
     capacity,
     price,
+    image,
 }: Props) => {
     return (
         <Card variant="outlined" className="product">
             <CardContent>
+                <div className="product-image">
+                    <img src={image} alt="" />
+                </div>
                 <div className="product-title">{title}</div>
-                <div className="product-desc">{description}</div>
+                <div
+                    className="product-desc"
+                    dangerouslySetInnerHTML={{
+                        __html: description,
+                    }}
+                ></div>
                 <div className="product-title">{type}</div>
                 <div className="product-title">{capacity} Gb</div>
                 <div className="product-price">{price}$</div>
+                <div className="product-quantity">
+                    <Button variant='outlined'>-</Button>
+                    <TextField size="small" value={1}/>
+                    <Button variant='outlined'>+</Button>
+                </div>
             </CardContent>
             <CardActions className="product-btn-wrap">
                 <Button variant="outlined">Add to cart</Button>
